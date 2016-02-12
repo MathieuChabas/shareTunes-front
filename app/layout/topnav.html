@@ -1,6 +1,7 @@
+<div ng-app="sharetunes.layout"  layout="row" ng-controller="TopnavController as topnavCtrl">
 <md-sidenav class="site-sidenav md-sidenav-left md-whiteframe-z2"
             md-component-id="left"
-            ng-click="homeCtrl.toggleList()" aria-label="Show User List"
+            ng-click="topnavCtrl.toggleList()" aria-label="Show User List"
             md-is-locked-open="$mdMedia('gt-sm')">
 
     <md-toolbar class="md-whiteframe-z1">
@@ -16,7 +17,7 @@
 <div flex layout="column" tabIndex="-1" role="main" class="md-whiteframe-z2">
 
     <md-toolbar layout="row" class="md-whiteframe-z1">
-        <md-button id="main" class="menu" hide-gt-sm ng-click="homeCtrl.toggleList()" aria-label="Show User List">
+        <md-button id="main" class="menu" hide-gt-sm ng-click="topnavCtrl.toggleList()" aria-label="Show User List">
             <md-icon md-svg-icon="bower_components/angular-material/demos/toolbar/demoBasicUsage/img/icons/menu.svg" ></md-icon>
         </md-button>
         <h3>Share Tunes App</h3>
@@ -28,3 +29,5 @@
 
         <p> Hello {{ firstname + " " + lastname }} !</p>
     </md-content>
+</div>
+</div>

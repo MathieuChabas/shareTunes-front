@@ -1,9 +1,9 @@
 (function() {
     'use strict';
 
-angular.module('sharetunesApp', [
+angular.module('sharetunes', [
     'ngMaterial',
-    'topnav'
+    'sharetunes.layout'
 ]);
 
 })();

@@ -5,8 +5,8 @@
     'use strict';
 
     angular
-        .module('topnav')
-        .controller('HomeController',HomeController);
+        .module('sharetunes.layout', [])
+        .controller('TopnavController',HomeController);
 
 
     function HomeController($scope,$mdSidenav){

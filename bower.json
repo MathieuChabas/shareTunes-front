@@ -4,15 +4,12 @@
   "authors": [
     "Mathieu CHABAS <mathieu.chabas@gmail.fr>"
   ],
-  "description": "",
-  "main": "",
+  "description": "An app to share music",
   "moduleType": [],
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components",
-    "test",
-    "tests"
+    "bower_components"
   ],
   "dependencies": {
     "angular-material": "^1.0.5"

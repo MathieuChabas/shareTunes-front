@@ -4,8 +4,8 @@ var changed     = require('gulp-changed');
 
 var config = {
     scripts : [
-        './app//**/*.controller.js',
-        './app//**/*.module.js',
+        './app/**/*.controller.js',
+        './app/**/*.module.js',
     ],
     dest: './dist/',
     minJs: 'app.min.js',

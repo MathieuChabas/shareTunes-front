@@ -1,33 +1,26 @@
-<div ng-app="sharetunes.layout"  layout="row" ng-controller="TopnavController as topnavCtrl">
-<md-sidenav class="site-sidenav md-sidenav-left md-whiteframe-z2"
-            md-component-id="left"
-            ng-click="topnavCtrl.toggleList()" aria-label="Show User List"
-            md-is-locked-open="$mdMedia('gt-sm')">
+<div ng-app="sharetunes.layout" ng-controller="TopnavController as topnavCtrl">
+    <div layout="row" flex>
+        <md-sidenav
+                class="site-sidenav md-sidenav-left md-whiteframe-z2"
+                md-component-id="left"
+                ng-click="topnavCtrl.toggleList()">
 
-    <md-toolbar class="md-whiteframe-z1">
-        <h3>Users</h3>
-    </md-toolbar>
+            <md-toolbar class="md-whiteframe-z1">
+                <h3>Users</h3>
+            </md-toolbar>
 
-    <md-list>
+            <md-list>
+            </md-list>
 
-    </md-list>
+        </md-sidenav>
+    </div>
 
-</md-sidenav>
-
-<div flex layout="column" tabIndex="-1" role="main" class="md-whiteframe-z2">
-
-    <md-toolbar layout="row" class="md-whiteframe-z1">
-        <md-button id="main" class="menu" hide-gt-sm ng-click="topnavCtrl.toggleList()" aria-label="Show User List">
-            <md-icon md-svg-icon="bower_components/angular-material/demos/toolbar/demoBasicUsage/img/icons/menu.svg" ></md-icon>
-        </md-button>
-        <h3>Share Tunes App</h3>
-    </md-toolbar>
-
-    <md-content flex layout-padding id="content">
-        <md-icon md-svg-icon="" class="avatar"></md-icon>
-        <h1>Welcome to shareTunes App !!</h1>
-
-        <p> Hello {{ firstname + " " + lastname }} !</p>
-    </md-content>
-</div>
+    <div flex layout="column" tabIndex="-1" class="md-whiteframe-z2">
+        <md-toolbar layout="row" class="md-whiteframe-z1">
+            <md-button id="main" class="menu" ng-click="topnavCtrl.toggleList()" aria-label="Show User List">
+                <md-icon md-svg-icon="bower_components/angular-material/demos/toolbar/demoBasicUsage/img/icons/menu.svg" ></md-icon>
+            </md-button>
+            <h3>Share Tunes App</h3>
+        </md-toolbar>
+    </div>
 </div>

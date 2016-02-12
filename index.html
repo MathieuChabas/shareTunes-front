@@ -7,9 +7,18 @@
     <link rel="stylesheet" href="assets/css/app.css"/>
 </head>
 
-<body ng-app="sharetunes"  layout="row" ngCloak>
+<body ng-app="sharetunes" ngCloak>
 
-<div ng-include src="'app/layout/topnav.html'"></div>
+<div ng-include="'app/layout/topnav.html'" flex></div>
+
+<div layout="row" flex>
+    <md-content flex layout-padding id="content">
+        <md-icon md-svg-icon="" class="avatar"></md-icon>
+        <h1>Welcome to shareTunes App !!</h1>
+
+        <p> Hello {{ firstname + " " + lastname }} !</p>
+    </md-content>
+</div>
 
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular-aria/angular-aria.js"></script>

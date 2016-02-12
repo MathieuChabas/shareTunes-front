@@ -5,7 +5,7 @@
     'use strict';
 
     angular
-        .module('sharetunes.layout', [])
+        .module('sharetunes.layout')
         .controller('TopnavController',HomeController);
 
 

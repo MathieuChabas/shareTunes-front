@@ -4,6 +4,6 @@
 (function() {
     'use strict';
 
-    angular.module('sharetunes.layout',['sharetunes','ngMaterial']);
+    angular.module('sharetunes.layout',[]);
 
 })();

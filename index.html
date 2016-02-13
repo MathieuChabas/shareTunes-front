@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>shareTunes</title>
-    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css"/>
-    <link rel="stylesheet" href="assets/css/app.css"/>
+    <!-- inject:css -->
+    <link rel="stylesheet" href="dist/angular/angular-material.min.css">
+    <link rel="stylesheet" href="dist/app.min.css">
+    <!-- endinject -->
 </head>
 
 <body ng-app="sharetunes" ngCloak>
@@ -13,20 +15,15 @@
 
 <div layout="row" flex>
     <md-content flex layout-padding id="content">
-        <md-icon md-svg-icon="" class="avatar"></md-icon>
         <h1>Welcome to shareTunes App !!</h1>
 
         <p> Hello {{ firstname + " " + lastname }} !</p>
     </md-content>
 </div>
 
-<script src="bower_components/angular/angular.js"></script>
-<script src="bower_components/angular-aria/angular-aria.js"></script>
-<script src="bower_components/angular-animate/angular-animate.js"></script>
-<script src="bower_components/angular-material/angular-material.js"></script>
-
-<script src="app/app.module.js"></script>
-<script src="app/layout/topnav.module.js"></script>
-<script src="app/layout/topnav.controller.js"></script>
+<!-- inject:js -->
+<script src="dist/angular/angular.concate.min.js"></script>
+<script src="dist/app.min.js"></script>
+<!-- endinject -->
 </body>
 </html>

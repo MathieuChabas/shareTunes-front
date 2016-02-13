@@ -6,7 +6,7 @@
 
     angular
         .module('sharetunes.layout')
-        .controller('TopnavController',HomeController);
+        .controller('TopnavController',['$scope','$mdSidenav',HomeController]);
 
 
     function HomeController($scope,$mdSidenav){

@@ -11,7 +11,6 @@
 
     function HomeController($scope,$mdSidenav){
         var self = this;
-
         self.toggleList = toggleUsersList;
 
         /**

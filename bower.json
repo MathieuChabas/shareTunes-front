@@ -12,6 +12,8 @@
     "bower_components"
   ],
   "dependencies": {
-    "angular-material": "^1.0.5"
+    "angular-material": "^1.0.5",
+    "jquery": "^2.2.0",
+    "plyr": "^1.5.13"
   }
 }

@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>shareTunes</title>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Oswald" />
     <!-- inject:css -->
-    <link rel="stylesheet" href="dist/angular/angular-material.min.css">
+    <link rel="stylesheet" href="dist/ext/angular-material.min.css">
+    <link rel="stylesheet" href="dist/ext/plyr.css">
     <link rel="stylesheet" href="dist/app.min.css">
     <!-- endinject -->
-    <script src="/socket.io/socket.io.js"></script>
+
+<!--    <script src="/socket.io/socket.io.js"></script>
     <script>
         var socket = io.connect('http://localhost:8280');
         socket.on('hello', function(message) {
             alert(message);
         });
-    </script>
+    </script>-->
 </head>
 
 <body ng-app="sharetunes" ngCloak>
@@ -22,14 +25,25 @@
 
 <div layout="row" flex>
     <md-content flex layout-padding id="content">
-        <h1>Welcome to shareTunes App !!</h1>
+        <h1 class="title">Welcome to shareTunes App !!</h1>
 
-        <p> Hello {{ firstname + " " + lastname }} !</p>
+        <div ng-include="'app/player/player.html'" flex></div>
+        <div ng-include="'app/listByGenre/songsByGenre.html'" flex></div>
+
     </md-content>
+
 </div>
 
 <!-- inject:js -->
-<script src="dist/angular/angular.concate.min.js"></script>
+<script src="dist/ext/angular.min.js"></script>
+<script src="dist/ext/angular-animate.min.js"></script>
+<script src="dist/ext/angular-aria.min.js"></script>
+<script src="dist/ext/angular-material.min.js"></script>
+<script src="dist/ext/jquery.min.js"></script>
+<script src="dist/ext/plyr.js"></script>
+<script src="dist/ext/soundcloud-sdk.js"></script>
+<script src="assets/js/init-plyr.js"></script>
+<script src="assets/js/init-soundcloud.js"></script>
 <script src="dist/app.min.js"></script>
 <!-- endinject -->
 </body>

@@ -6,18 +6,38 @@
 
     angular
         .module('sharetunes.layout')
-        .controller('TopnavController',['$scope','$mdSidenav',HomeController]);
+        .controller('TopnavController',['$scope','$mdSidenav','requestedGenre',NavController]);
 
 
-    function HomeController($scope,$mdSidenav){
+    function NavController($scope,$mdSidenav,requestedGenre){
         var self = this;
         self.toggleList = toggleUsersList;
+        self.setGenre = setGenre;
+
+        $scope.genres = [
+            {
+                'name':'electronic'
+            },
+            {
+                'name':'ambient'
+            },
+            {
+                'name':'pop'
+            },
+            {
+                'name':'rock'
+            }
+        ];
 
         /**
          * Hide or Show the 'left' sideNav area
          */
         function toggleUsersList() {
             $mdSidenav('left').toggle();
+        }
+
+        function setGenre($genre){
+            requestedGenre.setGenre($genre);
         }
     }
 })();

@@ -1,0 +1,8 @@
+<div ng-app="sharetunes.listByGenre" ng-controller="ListByGenreController as listCtrl">
+            <md-list class="listTracks">
+                <h3 class="title">{{genre}}</h3>
+                <md-list-item ng-repeat="track in tracks">
+                    <md-button ng-click="listCtrl.setTrack(track.id)">{{ track.title }}</md-button>
+                </md-list-item>
+            </md-list>
+</div>

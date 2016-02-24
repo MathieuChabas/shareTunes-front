@@ -2,3 +2,24 @@ md-toolbar h3 {
     margin: auto;
     font-weight: 500;
 }
+
+.song:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.title{
+    font-family:"Oswald";
+    letter-spacing: 0.1em;
+}
+
+.listTracks .title {
+    color: #f57200;
+    text-transform: uppercase;
+}
+
+.listGenres {
+    color: #f57200;
+    font-family:"Oswald";
+    font-size:16px;
+}

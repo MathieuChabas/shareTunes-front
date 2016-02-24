@@ -6,10 +6,13 @@
                 ng-click="topnavCtrl.toggleList()">
 
             <md-toolbar class="md-whiteframe-z1">
-                <h3>Users</h3>
+                <h3 class="title">Genres</h3>
             </md-toolbar>
 
-            <md-list>
+            <md-list class="listGenres">
+                <md-list-item ng-repeat="genre in genres">
+                    <md-button flex ng-click="topnavCtrl.setGenre(genre.name)">{{ genre.name }}</md-button>
+                </md-list-item>
             </md-list>
 
         </md-sidenav>
@@ -20,7 +23,7 @@
             <md-button id="main" class="menu" ng-click="topnavCtrl.toggleList()" aria-label="Show User List">
                 <md-icon md-svg-icon="bower_components/angular-material/demos/toolbar/demoBasicUsage/img/icons/menu.svg" ></md-icon>
             </md-button>
-            <h3>Share Tunes App</h3>
+            <h3 class="title">Share Tunes App</h3>
         </md-toolbar>
     </div>
 </div>
